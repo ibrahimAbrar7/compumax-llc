@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Plus, Star } from "lucide-react";
 
@@ -29,9 +30,11 @@ const HeroSection: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 flex-wrap">
-            <button className="bg-[#0056F6] text-white px-5 sm:px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-blue-700 transition text-sm sm:text-base">
-              CONTACT US <ArrowRight size={18} />
-            </button>
+            <Link href="/contact" passHref>
+  <button className="bg-[#0056F6] text-white px-5 sm:px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-blue-700 transition text-sm sm:text-base">
+    CONTACT US <ArrowRight size={18} />
+  </button>
+</Link>
 
             <div className="flex items-center gap-2 flex-wrap">
               <Star className="text-green-500 fill-green-500" size={18} />
