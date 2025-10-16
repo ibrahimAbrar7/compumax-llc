@@ -46,9 +46,9 @@ const HeroSection: React.FC = () => {
         {/* Right Side */}
         <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Top Left */}
-          <div className="bg-gradient-to-br from-[#D78CFF] to-[#9B5BFF] rounded-3xl flex items-center justify-center p-4">
+          <div className="bg-gradient-to-br from-[#054594] to-[#032D60] rounded-3xl flex items-center justify-center p-4">
             <Image
-              src="/hero-image.png" // replace with your actual image in /public/images
+              src="/img-2.jpg" // replace with your actual image in /public/images
               alt="Mockup"
               width={220}
               height={140}

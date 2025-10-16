@@ -1,4 +1,4 @@
-import FeaturesGrid from "./components/FeaturesGrid";
+import Contact from "./components/Contact";
 import FeaturesSection from "./components/FeaturesSection";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -14,8 +14,8 @@ export default function Home() {
       <Header />
       <HeroSection/>
       <FeaturesSection />
-      <FeaturesGrid />
       <Services />
+      <Contact />
       <Footer />
     </>
   );

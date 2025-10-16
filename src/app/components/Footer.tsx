@@ -18,7 +18,7 @@ export default function Footer() {
             <div>
               <p className="text-sm">{item.label}</p>
               {item.href ? (
-                <a href={item.href} className="text-lg font-semibold block leading-snug">{item.value}</a>
+                <Link href={item.href} className="text-lg font-semibold block leading-snug">{item.value}</Link>
               ) : (
                 <p className="text-lg font-semibold leading-snug">{item.value}</p>
               )}
@@ -40,8 +40,8 @@ export default function Footer() {
             <Send className="w-5 h-5 cursor-pointer" />
           </div>
           <div className="flex gap-3 flex-wrap">
-            {["FACEBOOK", "TWITTER", "LINKDIN"].map((s, i) => (
-              <a key={i} href="#" className="bg-white/10 px-4 py-2 rounded-lg text-xs hover:bg-white/20">{s}</a>
+            {["FACEBOOK", "TWITTER", "LINKEDIN"].map((s, i) => (
+              <Link key={i} href="#" className="bg-white/10 px-4 py-2 rounded-lg text-xs hover:bg-white/20">{s}</Link>
             ))}
           </div>
         </div>
@@ -54,19 +54,20 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Info */}
-        <div className="pl-0 md:pl-10">
-          <h3 className="text-xl font-semibold mb-5">Information</h3>
-          <ul className="space-y-2 text-sm leading-relaxed">
-            {["About Compumax", "Investors", "Contact", "Affiliate Program", "Career", "Pricing Plan"].map((s, i) => (
-              <li key={i}><Link href="#">{s}</Link></li>
-            ))}
+        <div>
+          <h3 className="text-xl font-semibold mb-5">Quick Links</h3>
+          <ul className="space-y-3 text-sm leading-relaxed">
+            <li><Link href="/" className="text-white hover:underline">Home</Link></li>
+            <li><Link href="/about" className="text-white hover:underline">About</Link></li>
+            <li><Link href="/portfolio" className="text-white hover:underline">Portfolio</Link></li>
+            <li><Link href="/services" className="text-white hover:underline">Services</Link></li>
+            <li><Link href="/contact" className="text-white hover:underline">Contact Us</Link></li>
           </ul>
         </div>
       </div>
 
       {/* Bottom */}
-      <div className="w-full animate-gradient bg-gradient-to-r from-cyan-400 via-green-500 via-yellow-500 via-red-500 to-pink-500 text-white text-white text-center py-4 text-sm flex flex-col md:flex-row items-center justify-between px-6">
+      <div className="w-full animate-gradient bg-gradient-to-r from-cyan-400 via-green-600 via-yellow-600 via-red-600 to-pink-600 text-white text-white text-center py-4 text-sm flex flex-col md:flex-row items-center justify-between px-6">
         <p>© 2024 Compumax LLC, All rights reserved.</p>
         <p>Developed by Compumax LLC</p>
       </div>
