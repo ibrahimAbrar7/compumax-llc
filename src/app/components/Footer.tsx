@@ -68,7 +68,7 @@ export default function Footer() {
 
       {/* Bottom */}
       <div className="w-full animate-gradient bg-gradient-to-r from-cyan-400 via-green-600 via-yellow-600 via-red-600 to-pink-600 text-white text-white text-center py-4 text-sm flex flex-col md:flex-row items-center justify-between px-6">
-        <p>© 2024 Compumax LLC, All rights reserved.</p>
+        <p>© 2025 Compumax LLC, All rights reserved.</p>
         <p>Developed by Compumax LLC</p>
       </div>
 
