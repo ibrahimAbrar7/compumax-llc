@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FiExternalLink, FiMenu, FiX } from "react-icons/fi";
@@ -30,16 +31,17 @@ export default function Header() {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4">
         {/* Logo */}
         <div className="flex items-center gap-3">
-    <Link href="/">
-      <Image
-        src="/logo.png"
-        alt="Logo"
-        width={0}
-        height={0}
-        sizes="100vw"
-        style={{ width: "180px", height: "auto" }}
-      />
-    </Link>
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "180px", height: "auto" }}
+            />
+          </Link>
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8">
@@ -87,14 +89,16 @@ export default function Header() {
         <div className="absolute top-0 right-0 w-64 h-full bg-white shadow-2xl p-6 flex flex-col">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "180px", height: "auto" }}
-            />
+            <Link href="/">
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "180px", height: "auto" }}
+              />
+            </Link>
           </div>
 
           {/* Close Button */}

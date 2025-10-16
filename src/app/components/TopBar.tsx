@@ -8,10 +8,20 @@ export default function TopBar() {
             <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2 text-xs lg:text-sm">
                 {/* Left - Address */}
                 <div className="flex items-center gap-2">
-                    <FaMapMarkerAlt />
-                    <span>341 All Angels Hill Rd <br />
-                        Wappingers Falls, NY 12590</span>
-                </div>
+  <Link
+    href="https://maps.app.goo.gl/66poP8VVJtMtfXu39"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2"
+  >
+    <FaMapMarkerAlt />
+    <span>
+      341 All Angels Hill Rd <br />
+      Wappingers Falls, NY 12590
+    </span>
+  </Link>
+</div>
+
 
                 {/* Middle - Offer */}
                 <div className="hidden sm:block text-center">

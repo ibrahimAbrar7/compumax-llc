@@ -11,7 +11,7 @@ export default function Footer() {
         {[
           { icon: <Mail />, label: "Write to us", value: "info@compumaxllc.com", href: "mailto:info@compumaxllc.com" },
           { icon: <Phone />, label: "Call Us (USA)", value: "201-298-1974", href: "tel:2012981974" },
-          { icon: <MapPin />, label: "Our Office", value: "341 All Angels Hill Rd, Wappingers Falls, NY 12590" }
+          { icon: <MapPin />, label: "Our Office", value: "341 All Angels Hill Rd, Wappingers Falls, NY 12590",href: "https://maps.app.goo.gl/66poP8VVJtMtfXu39" }
         ].map((item, i) => (
           <div key={i} className="flex items-start gap-4">
             <div className="bg-white/10 p-3 rounded-full">{item.icon}</div>
