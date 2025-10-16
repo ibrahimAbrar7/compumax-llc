@@ -30,15 +30,16 @@ export default function Header() {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <Image
-            src="/logo.png"
-            alt="Logo"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "180px", height: "auto" }}
-          />
-        </div>
+    <Link href="/">
+      <Image
+        src="/logo.png"
+        alt="Logo"
+        width={0}
+        height={0}
+        sizes="100vw"
+        style={{ width: "180px", height: "auto" }}
+      />
+    </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8">
