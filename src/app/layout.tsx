@@ -14,7 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Compumax LLC",
-  description: "Compumax LLC is a forward-thinking IT company dedicated to helping businesses succeed in the digital world. We provide creative and responsive website design, custom development, SEO management, performance optimization, in-depth analytics, and thorough testing to ensure your online presence is strong, secure, and results-driven.",
+  description:
+    "Compumax LLC is a forward-thinking IT company dedicated to helping businesses succeed in the digital world. We provide creative and responsive website design, custom development, SEO management, performance optimization, in-depth analytics, and thorough testing to ensure your online presence is strong, secure, and results-driven.",
+  icons: {
+    icon: "/favicon.ico", 
+  },
 };
 
 export default function RootLayout({
@@ -24,6 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
