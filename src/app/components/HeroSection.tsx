@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -17,24 +19,22 @@ const HeroSection: React.FC = () => {
             className="font-bold text-[#0F1E3E] leading-snug mb-4"
             style={{ fontSize: "clamp(1.5rem, 4vw, 3rem)" }}
           >
-            Empowering Your Business with{" "}
-            <br className="hidden md:block" /> Innovative IT Solutions
+            Empowering Your Business with <br className="hidden md:block" /> Innovative IT Solutions
           </h1>
 
           <p
             className="text-gray-700 mb-8 max-w-lg"
             style={{ fontSize: "clamp(0.85rem, 2vw, 1rem)" }}
           >
-            In today’s competitive business, the demand for efficient and
-            cost-effective IT solutions has never been more critical.
+            In today’s competitive business, the demand for efficient and cost-effective IT solutions has never been more critical.
           </p>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 flex-wrap">
-            <Link href="/contact" passHref>
-  <button className="bg-[#0056F6] text-white px-5 sm:px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-blue-700 transition text-sm sm:text-base">
-    CONTACT US <ArrowRight size={18} />
-  </button>
-</Link>
+            <Link href="/contact">
+              <button className="bg-[#0056F6] text-white px-5 sm:px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-blue-700 transition text-sm sm:text-base">
+                CONTACT US <ArrowRight size={18} />
+              </button>
+            </Link>
 
             <div className="flex items-center gap-2 flex-wrap">
               <Star className="text-green-500 fill-green-500" size={18} />
@@ -51,7 +51,7 @@ const HeroSection: React.FC = () => {
           {/* Top Left */}
           <div className="bg-gradient-to-br from-[#054594] to-[#032D60] rounded-3xl flex items-center justify-center p-4">
             <Image
-              src="/img-2.jpg" // replace with your actual image in /public/images
+              src="/img-2.jpg"
               alt="Mockup"
               width={220}
               height={140}
