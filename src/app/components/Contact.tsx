@@ -19,7 +19,7 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#00194b] bg-transparent placeholder-gray-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#00194b] bg-transparent placeholder-gray-800"
                 />
               </div>
               <div>
@@ -29,7 +29,7 @@ export default function Contact() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#00194b] bg-transparent placeholder-gray-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#00194b] bg-transparent placeholder-gray-800"
                 />
               </div>
               <div>
@@ -39,7 +39,7 @@ export default function Contact() {
                  <input
                   type="text"
                   placeholder="Enter the subject"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#00194b] bg-transparent placeholder-gray-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#00194b] bg-transparent placeholder-gray-800"
                 />
               </div>
               <div>
@@ -49,7 +49,7 @@ export default function Contact() {
                  <textarea
                   rows={4}
                   placeholder="Write your message here"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#00194b] bg-transparent placeholder-gray-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#00194b] bg-transparent placeholder-gray-800"
                 ></textarea>
               </div>
 
