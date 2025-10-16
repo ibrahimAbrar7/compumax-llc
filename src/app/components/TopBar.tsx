@@ -16,7 +16,7 @@ export default function TopBar() {
                 {/* Middle - Offer */}
                 <div className="hidden sm:block text-center">
                     We offer cutting-edge <strong>web developments</strong> and design solutions.{" "}
-                    <Link href="#" className="underline hover:text-yellow-300">
+                    <Link href="/" className="underline hover:text-yellow-300">
                         Learn more →
                     </Link>
                 </div>
